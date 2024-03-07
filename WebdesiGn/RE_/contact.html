@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Project Contact</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+    background-color: lightblue;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: rgb(60, 227, 27);
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    text-decoration: red;
+}
+
+p {
+    font-family: verdana;
+    font-size: 20px;
+}
+    </style>
+</head>
+<body>
+    <h1>My Project Contact</h1>
+    <script>
+    function validateForm() {
+        let x = document.forms["myForm"]["fname"].value;
+        if (x == "") {
+          alert("Enter information");
+          return false;
+        }
+      }
+      </script>
+<nav>
+    <ul>
+        <li>
+            <a href="index.html" >Home</a>
+        </li>
+        <li>
+            <a href="contact.html" class="active">Contact</a>
+
+        </li>
+        <li>
+            <a href="about.html">About</a>
+        </li>
+    </ul>
+</nav>
+</body>
+<form action="/submit-form" method="POST">
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name"><br>
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email"><br>
+    <input type="submit" value="Submit">
+</form>
+<p>This is my first individual project I've worked on during my time at KSU so i have my contact information for further imquries.:</p>
+<script src="script.js"></script>
+</body>
+</html>
